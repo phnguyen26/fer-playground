@@ -1,0 +1,26 @@
+# Python
+__pycache__/
+*.pyc
+*.pyd
+
+# Virtual environments
+.venv/
+
+
+# Build / cache artifacts
+build/
+dist/
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.ipynb_checkpoints/
+
+# Jupyter
+.jupyter/
+
+# Frontend
+script/frontend/node_modules/
+script/frontend/dist/
+
+
