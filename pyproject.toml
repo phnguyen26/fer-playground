@@ -1,0 +1,2 @@
+[tool.vercel]
+entrypoint = "script.backend.main:app"
