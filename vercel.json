@@ -2,11 +2,7 @@
   "version": 2,
   "buildCommand": "npm run build",
   "outputDirectory": "dist",
-  "functions": {
-    "script/backend/main.py": {
-      "runtime": "@vercel/python@latest"
-    }
-  },
+  
   "rewrites": [
     {
       "source": "/(.*)",

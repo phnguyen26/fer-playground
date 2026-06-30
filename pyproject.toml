@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "fer-2013-api"
+version = "0.1.0"
+requires-python = ">=3.12"
+dependencies = [
+	"fastapi",
+	"uvicorn[standard]",
+	"python-multipart",
+	"pillow",
+	"numpy",
+	"onnxruntime",
+]
+
+[tool.vercel]
+entrypoint = "script.backend.main:app"
