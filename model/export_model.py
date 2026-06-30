@@ -3,12 +3,12 @@ from pathlib import Path
 from model.model import load_model
 
 ROOT = Path(__file__).parents[1]
-model = load_model(str(ROOT / "weights.pth"), device=torch.device('cpu')) 
+model = load_model(str(ROOT / "api" / "weights.pth"), device=torch.device('cpu')) 
 
 dummy_input = torch.zeros((1, 1, 48, 48), dtype=torch.float32)
 
 
-onnx_path = str(ROOT / "vgg8.onnx")
+onnx_path = str(ROOT / "api" / "vgg8.onnx")
 torch.onnx.export(
     model,                  
     dummy_input,            

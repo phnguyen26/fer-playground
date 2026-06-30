@@ -9,12 +9,12 @@ from fastapi.middleware.cors import CORSMiddleware
 from fastapi.staticfiles import StaticFiles
 from PIL import Image, UnidentifiedImageError
 
-from script.service import CLASS_NAMES, Classifier
+from api.service import CLASS_NAMES, Classifier
 
 
-ROOT_DIR = Path(__file__).resolve()
+ROOT_DIR = Path(__file__).parents[1].resolve()
 print(f"ROOT_DIR: {ROOT_DIR}")
-MODEL_PATH = ROOT_DIR / "vgg8.onnx"
+MODEL_PATH = ROOT_DIR / "api" / "vgg8.onnx"
 FER_ROOT = ROOT_DIR / "data" / "FER-2013" / "test"
 
 KAGGLE_ROOT = ROOT_DIR / "data" / "FACE-EMOTION-KAGGLE"
