@@ -9,7 +9,7 @@ from fastapi.middleware.cors import CORSMiddleware
 from fastapi.staticfiles import StaticFiles
 from PIL import Image, UnidentifiedImageError
 
-from script.backend.service import CLASS_NAMES, Classifier
+from script.service import CLASS_NAMES, Classifier
 
 
 ROOT_DIR = Path(__file__).resolve()
