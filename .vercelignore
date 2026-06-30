@@ -1,6 +1,6 @@
 .venv/
-script/frontend/node_modules/
-script/frontend/dist/
+*node_modules/
+*dist/
 __pycache__/
 **/__pycache__/
 *.pyc
