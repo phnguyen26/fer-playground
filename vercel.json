@@ -2,7 +2,11 @@
   "version": 2,
   "buildCommand": "npm run build",
   "outputDirectory": "dist",
-  "functions": "script/backend/main.py",
+  "functions": {
+    "script/backend/main.py": {
+      "runtime": "python3.13"
+    }
+  },
   "rewrites": [
     {
       "source": "/(.*)",
