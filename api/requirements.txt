@@ -5,6 +5,3 @@ pillow
 numpy
 onnxruntime
 onnxscript
-seaborn
-pandas
-scikit-learn
