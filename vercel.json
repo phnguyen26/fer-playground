@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "buildCommand": "npm run build",
+  "outputDirectory": "dist",
+  "functions": "script/backend/main.py",
+  "rewrites": [
+    {
+      "source": "/(.*)",
+      "destination": "script/backend/main.py"
+    }
+  ]
+}
